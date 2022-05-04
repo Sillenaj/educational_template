@@ -78,7 +78,7 @@ function setup() {
 function draw() {
     // setting a background color for the canvas
     // this is a built-in p5 function
-    background(100);
+    background(0);
     // The call to squareSize below looks familiar. Why did we do this again?
     // because the old sqsize variable was declared inside a function...
     // it doesn't exist outside that function's scope.
@@ -110,7 +110,7 @@ function draw() {
         // an angle in radians
         t = PI*random_seeds[index+4]
         // now we can call those values in the equilateral triangle function
-        equilateralTriangle(x_pos,y_pos,r,t);
+        // equilateralTriangle(x_pos,y_pos,r,t);
     }
     // here the loop for making triangles closes, so we use pop to return to our normal settings
     pop()
